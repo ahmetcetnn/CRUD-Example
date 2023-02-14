@@ -1,5 +1,8 @@
 import {useState} from "react"
 import './App.css';
+import {Routes,Link,Route} from 'react-router-dom'
+import Bilgiler from './Bilgiler'
+
 
 function App() {
 const [form,setForm]=useState({isim:'', sehir:'', dogum:'', renk:'', adres:''});
@@ -24,8 +27,14 @@ const handleChange=(event) =>{
         <input type="date" name="dogum" value={form.dogum} onChange={handleChange}/>
         <input type="color" name="renk" value={form.renk} onChange={handleChange}/>
         <textarea name="adres" placeholder='Adresinizi Giriniz' value={form.adres} onChange={handleChange}/>
-        <button>Gönder</button>
+        <Link to ="/bilgiler" ><button>Gönder</button></Link>
       </form>
+      
+      <Routes>
+         <Route path="/" exact ></Route>
+         <Route path="/bilgiler" element={<Bilgiler form={form}/>} />
+
+      </Routes>
     </div>
   );
 }
