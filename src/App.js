@@ -18,10 +18,11 @@ const handleChange=(event) =>{
      
       
       <Routes>
-         <Route path="/" exact ></Route>
+         <Route path="/" exact element={<Form form={form} handleChange={handleChange} />}> </Route>
          <Route path="/bilgiler" element={<Bilgiler form={form}/>} />
 
       </Routes>
+      
     </div>
   );
 }
