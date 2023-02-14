@@ -2,7 +2,7 @@ import {useState} from "react"
 import './App.css';
 import {Routes,Link,Route} from 'react-router-dom'
 import Bilgiler from './Bilgiler'
-
+import Form from "./Form";
 
 function App() {
 const [form,setForm]=useState({isim:'', sehir:'', dogum:'', renk:'', adres:''});
