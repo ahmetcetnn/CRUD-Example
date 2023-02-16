@@ -14,7 +14,7 @@ const handleChange=(event) =>{
 
   return (
     <div className="App">
-      <h2>Bilgilerini Giriniz</h2>
+      <h2>Bilgilerini Girxiniz</h2>
      
       
       <Routes>
