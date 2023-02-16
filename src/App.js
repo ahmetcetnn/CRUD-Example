@@ -15,7 +15,7 @@ const handleChange=(event) =>{
   return (
     <div className="App">
       <h2>Bilgilerini Giriniz</h2>
-     
+     s
       
       <Routes>
          <Route path="/" exact element={<Form form={form} handleChange={handleChange} />}> </Route>
